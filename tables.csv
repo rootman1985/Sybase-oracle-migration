@@ -1,0 +1,2 @@
+source_schema,source_table,target_schema,target_table,id_column,enabled
+dbo,CDX_ADM_LOG_EXTRACT_DOC,REPORTING,CDX_ADM_LOG_EXTRACT_DOC,IdLog,true

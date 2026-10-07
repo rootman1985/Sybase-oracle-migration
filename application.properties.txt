@@ -1,0 +1,36 @@
+# =========================
+# CONNEXION SYBASE
+# =========================
+sybase.url=jdbc:sybase:Tds://HOST_SYBASE:PORT/DB_SYBASE
+sybase.user=USER_SYBASE
+sybase.password=PASSWORD_SYBASE
+sybase.driver=com.sybase.jdbc4.jdbc.SybDriver
+
+# =========================
+# CONNEXION ORACLE
+# =========================
+oracle.url=jdbc:oracle:thin:@//HOST_ORACLE:1521/SERVICE
+oracle.user=USER_ORACLE
+oracle.password=PASSWORD_ORACLE
+oracle.driver=oracle.jdbc.OracleDriver
+
+# =========================
+# MIGRATION
+# =========================
+migration.range-size=10000
+migration.batch-size=1000
+migration.fetch-size=1000
+migration.query-timeout-seconds=0
+
+# Commit uniquement une plage après succès complet.
+migration.commit-per-range=true
+
+# Reprise
+migration.state-directory=state
+migration.error-directory=logs
+
+# Vérification des tailles numériques/texte.
+migration.fail-on-incompatible=true
+
+# Mettre à true seulement après validation en recette.
+migration.sync-identity=false
